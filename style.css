@@ -1,0 +1,82 @@
+* {
+    font-family: Josefin Sans, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(45deg, rgba(12,79,176,1) 0%, rgba(21,127,167,1) 50%, rgba(22,186,219,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title {
+    font-size: 40px;
+    margin: 20px 0px;
+    text-shadow: 2px 2px 10px rgba(255,255,255,0.5);
+}
+
+#info {
+    display: none;
+    font-size: 20px;
+    margin: 20px 0px;
+    border-radius: 5px;
+    text-shadow: 2px 2px 10px rgba(255,255,255,0.5);
+}
+
+#grid-game {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 300px;
+    width: 300px;
+    margin: 30px 0px;
+}
+
+div.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#box-2, #box-8 {
+    border-left: solid 3px black;
+    border-right: solid 3px black;
+}
+
+#box-4, #box-6 {
+    border-top: solid 3px black;
+    border-bottom: solid 3px black;
+}
+
+#box-5 {
+    border: solid 3px black;
+}
+
+.box:hover {
+    background-color: rgba(12,79,176,0.5);
+    cursor: pointer;
+}
+
+button {
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    border: solid 2px black;
+    cursor: pointer;
+    background-color: transparent;
+    margin: 10px;
+    text-shadow: 2px 2px 5px rgba(255,255,255,0.5);
+}
